@@ -1,2 +1,2 @@
-const baseUrl="https://finanta-api.herokuapp.com/"
+const baseUrl="https://finanta-api.herokuapp.com"
 export default baseUrl
