@@ -2,7 +2,7 @@
 
 
 # Finanta - Make a Ton 5.0
-Tell us about your project here
+An app that provides it users a true sketch of their financial expenses along with providing them financial advices and a tool where they can invest their savings money onto liquid funds through their AMC bank accounts and can earn returns which are high compared to traditional bank FD's and can best the remorse effect of inflation. Newly working section of the society has no idea regarding how and how much to spend so we provide them a group of basic goals like housing,car,rent,travel,medical expenses, savings etc... and how they can achieve them and for that what percentage of income should they utilize in each of these goals as its EMI or downpayment.
 
 ## Team Members
 [1.Abhishek Kurian](https://github.com/omen1650ti)   
@@ -18,7 +18,7 @@ Tell us about your project here
 2.  In the landing page it contains a discussion board where we will be able to see the opinios of people on various topics related to finance. So the users can have a glance through them and get to know the imporatnce of various aspects.
 3. We have another page where it contains the details regarding the car loans and EMIs that the user can afford with his income and savings.It will be displayed in a filtered manner
 4. we will be having an authentication system which can help us to get the user data for calkculating his financial stability.
-Embed video of project demo
+[https://www.youtube.com/watch?v=HZwtsLt1YO8](https://www.youtube.com/watch?v=HZwtsLt1YO8)
 
 ## Technologies used
 #### Django, ReactJS, MUI, DbSQLite 3
