@@ -33,30 +33,32 @@ export const data = {
   
   
 function Carloan() {
+  const [filteredvalues,setFilteredvalues]=useState([])
 
-  const [cardata,setCardata]= useState([])
-  const [userdetail,setUserdetail]=useState([])
-let filteredvalues=[]
-  const checkcondition=(element)=>{
-    console.log(element)
-           if((20/100)*userdetail.ntincome>element.monthly_payment)
-           return element
-  }
+ 
 
-    useEffect(()=>{
+  useEffect(()=>{
+    axiosInstance.get(`${baseUrl}/user-detail/`).then((response)=>{
+        
+      
+      console.log(response.data)
        axiosInstance.get(`${baseUrl}/car-loans/`).then((res)=>{
-          setCardata(res.data)
-          console.log(res.data)
+       // console.log(res.data)
+             res.data.map((item)=>{
+          console.log(item)
+          if(item.monthly_payment<(0.2)*response.data[1].t_income)
+          {
+           console.log('entered')
+            setFilteredvalues([...filteredvalues,item])
+          }
+         })
+     console.log("filtered",filteredvalues)
 
-       }).then(()=>{
-        axiosInstance.get(`${baseUrl}/user-detail/`).then((res)=>{
-          setUserdetail(res.data)
-        })
-       }).then(()=>{
-           filteredvalues=cardata.filter(checkcondition)
-       })
-
-    },[])
+      })
+      
+    })
+  }, [])
+  
 
     
   return (
@@ -77,6 +79,7 @@ let filteredvalues=[]
 
                
                   {filteredvalues.map((item)=>{
+                    console.log("hi")
                   return(
                    <Carcards key={item.id} agent={ item.agent} carname={item.car_name} duration={item.duration} interestrate={item.interest_rate} phno={item.phno} />
    ) })}
