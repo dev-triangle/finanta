@@ -35,12 +35,25 @@ export const data = {
 function Carloan() {
 
   const [cardata,setCardata]= useState([])
+  const [userdetail,setUserdetail]=useState([])
+let filteredvalues=[]
+  const checkcondition=(element)=>{
+    console.log(element)
+           if((20/100)*userdetail.ntincome>element.monthly_payment)
+           return element
+  }
 
     useEffect(()=>{
        axiosInstance.get(`${baseUrl}/car-loans/`).then((res)=>{
           setCardata(res.data)
           console.log(res.data)
 
+       }).then(()=>{
+        axiosInstance.get(`${baseUrl}/user-detail/`).then((res)=>{
+          setUserdetail(res.data)
+        })
+       }).then(()=>{
+           filteredvalues=cardata.filter(checkcondition)
        })
 
     },[])
@@ -63,7 +76,7 @@ function Carloan() {
                 <div className="car_loans_container">
 
                
-                  {cardata.map((item)=>{
+                  {filteredvalues.map((item)=>{
                   return(
                    <Carcards key={item.id} agent={ item.agent} carname={item.car_name} duration={item.duration} interestrate={item.interest_rate} phno={item.phno} />
    ) })}
