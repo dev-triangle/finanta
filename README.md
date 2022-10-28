@@ -18,7 +18,7 @@ An app that provides it users a true sketch of their financial expenses along wi
 2.  In the landing page it contains a discussion board where we will be able to see the opinios of people on various topics related to finance. So the users can have a glance through them and get to know the imporatnce of various aspects.
 3. We have another page where it contains the details regarding the car loans and EMIs that the user can afford with his income and savings.It will be displayed in a filtered manner
 4. we will be having an authentication system which can help us to get the user data for calkculating his financial stability.
-Embed video of project demo
+[https://www.youtube.com/watch?v=HZwtsLt1YO8](https://www.youtube.com/watch?v=HZwtsLt1YO8)
 
 ## Technologies used
 #### Django, ReactJS, MUI, DbSQLite 3
