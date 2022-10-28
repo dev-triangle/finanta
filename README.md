@@ -11,7 +11,7 @@ Tell us about your project here
 [4.Achyuth Mohan](https://github.com/AchyuthMohan)   
 
 ## Link to Project
-[Embed the live link of project](live_link)
+[https://submission-template.pages.dev/](https://submission-template.pages.dev/)
 
 ## How it Works ?
 1. Landing page of the website contains a guide which the users can read to get an idea on how to use this app.
