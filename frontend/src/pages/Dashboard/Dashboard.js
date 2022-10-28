@@ -11,10 +11,11 @@ function Dashboard() {
      <div className='dashboard__leftcont'>
       <div className='dashboard__graphchart'>
         <div className='dashboard__graphsection'>
-                  <img className='d__graph' src={graph1} alt="graph_ui" />
+        <img className='d__graph' src={graph1} alt="graph_ui" />
         </div>
         <div className='dashboard__chart'>
-                  <img className='d__graph' src={graph1}alt="graph_ui" />
+               <h3>your saving is: 100000</h3>
+              <h3>your monthly income is: 200000</h3>
         </div>
 
       </div>
@@ -28,7 +29,7 @@ function Dashboard() {
          <div className='dashboard__btns'>
             <div className='glow-on-hover'>Upgrade</div>
          </div>
-          <div className='dashboard__anim'></div>
+         
 
        </div>
           
