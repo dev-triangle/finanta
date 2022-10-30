@@ -12,8 +12,8 @@ function Navbar() {
           <li><a href="/">About</a></li>
           <DropdownButton id="dropdown-basic-button" title="Calculate">
           <Dropdown.Item className='drop__items' href="/carLoan">Car Loan</Dropdown.Item>
-          <Dropdown.Item className='drop__items' href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item className='drop__items' href="#/action-3">Something else</Dropdown.Item>
+          <Dropdown.Item className='drop__items' href="#/action-2">Gadgets EMI</Dropdown.Item>
+          <Dropdown.Item className='drop__items' href="#/action-3">Housing Loan</Dropdown.Item>
         </DropdownButton>
           <li><a href="/dashboard">Dashboard</a></li>
 		    <li><a href="/login">Login</a></li> 
